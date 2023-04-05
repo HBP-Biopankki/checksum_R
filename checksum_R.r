@@ -10,7 +10,7 @@ Checksum_R <-function(my_str){
   iterable = strsplit(palat[[1]][4], "")[[1]]
   
   
-  master_list = list(iterable, magic_numbers)
+  master_list = list(rev(iterable), magic_numbers)
   master_list$mult = as.numeric(master_list[[1]]) * master_list[[2]]
   master_summa = sum(master_list$mult)
   
