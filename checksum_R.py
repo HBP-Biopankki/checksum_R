@@ -31,7 +31,7 @@ def checksum_R(my_str, logic):
     ################ / Dymmy logiikkaa ################
     
     summa = 0    
-    for val, paino  in zip (palat[3], painot) : 
+    for val, paino  in zip (palat[3][[::-1], painot) : 
         summa += int(val) * paino
     summa = (int(math.ceil(summa / 10.0)) * 10) - summa #ref fi.wikipedia.org/wiki/Tilisiirto#Viitenumero 
     
